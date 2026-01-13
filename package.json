@@ -1,0 +1,1 @@
+{"name":"tailwind","version":"1.0.0","description":"","main":"index.js","scripts":{"asiah":"npx tailwindcss -i ./src/input.css -o ./public/style.css --watch"},"keywords":[],"author":"","license":"ISC","type":"commonjs","devDependencies":{"tailwindcss":"^3.4.19"},"dependencies":{"scrollreveal":"^4.0.9"}}

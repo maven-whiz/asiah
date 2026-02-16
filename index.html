@@ -2,104 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="cal.css">
 </head>
-<body class="bg-gradient-to-t from-blue-700 via-blue-800 to-gray-900 text-white ">
-    <div class="min-h-screen px-6 py-3">
-<header class="  flex justify-between  ">
-    <a href="" class="flex items-center ">
-        <h1 class="text-4xl font-bold animate-pulse  ">MAVEN.</h1>
-    </a>
-  
-<div class="  hidden lg:flex">
-      <a href="#" class="m-10 bg-black p-4  font-bold rounded-lg text-white transition-all hover:bg-white hover:text-black ">Home</a>
-    <a href="#" class=" m-10 bg-black p-4  font-bold rounded-lg text-white transition-all hover:bg-white hover:text-black">About Us</a>
-    <a href="#" class="m-10 bg-black p-4  font-bold rounded-lg text-white transition-all hover:bg-white hover:text-black">Blog</a>
-    <a href="#" class="m-10 bg-black p-4  font-bold rounded-lg text-white transition-all hover:bg-white hover:text-black">Contact Us</a>
+<body>
+    <!-- <h1 class="asiah"></h1>
+    <section class="as">
+        
+           <div>C</div>
+        <div>()</div>
+        <div>%</div>
+        <div>/</div>
+        <div onclick="asiah.value = '7'">7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>X</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>-</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>+</div>
+        <div>0</div>
+        <div>.</div>
+        <div>=</div> 
+    </section> -->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+<div class="calculator">
+<form action="">
+    <div class="display">
+        <input type="text" name="display">
+    </div>
+<div class="cal">
+    <input type="button" value="AC" onclick="display.value =''">
+        <input type="button" value="DEL"  onclick="display.value = display.value.toString().slice(0,-1)">
+        <input type="button" value="." onclick="display.value +='.'" >
+        <input type="button" value="/" onclick="display.value +='/'">
 </div>
-       
-    <div class=" lg:hidden">
-                    <i class="fa fa-bars fa-2x " aria-hidden="true"></i>
-        </div>
+<div>
+    <input type="button" value="7" onclick="display.value +='7' ">
+        <input type="button" value="8" onclick="display.value +='8' ">
+        <input type="button" value="9" onclick="display.value +='9' ">
+        <input type="button" value="*" onclick="display.value +='*' ">
+</div>
+<div>
+    <input type="button" value="4">
+        <input type="button" value="5" onclick="display.value +='5' ">
+        <input type="button" value="6" onclick="display.value +='6' ">
+        <input type="button" value="-" onclick="display.value +='-' ">
+</div>
+<div>
+    <input type="button" value="1" onclick="display.value +='1' "> >
+        <input type="button" value="2" onclick="display.value +='2' ">
+        <input type="button" value="3" onclick="display.value +='3' ">
+        <input type="button" value="+" onclick="display.value +='+' ">
+</div>
+<div>
+    <input type="button" value="00" onclick="display.value +='00' ">
+        <input type="button" value="0"  onclick="display.value +='00'">
+        <input type="button" value ="=" onclick="display.value= eval(display.value)">
+        
+</div>
+</form>
+</div>
+</div>
 
 
-  
-</header>
-<main class="flex justify-between asiah">
-    <div class="my-10 w-60  lg:w-96 md:w-96 sm:w-40 ">
-        <h1  class="my-8 text-4xl font-bold lg:text-6xl md:text-5xl">Unlock Your Potential</h1>
-        <p class="text-1.5xl my-6 lg:text-3xl md:text-3xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod</p>
-        <a href="#" class="bg-black p-4 rounded-lg font-bold transition-all hover:bg-white hover:text-black duration-300">Learn More</a>
-    </div>
-    <div class="" >
-        <img src="write.jpg" alt="" class="rounded-full my-10 w-60 lg:w-80">
-    </div>
-</main>
 
 
 
-<section class="my-20 as" >
-    <div class="flex flex-col  md:flex-row justify-center items-center gap-6 p-10">
-        <div class="w-60 text-center bg-white py-16 shadow-black shadow-lg transition-all hover:scale-105 duration-300">
-            <img src="as (1).jpg" width="" alt="" class="rounded-full w-20 mx-20">
-            <h1 class="font-bold text-black">Our Services</h1>
-            <p class="text-black">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, vero perspiciatis cumque asperiores quam </p>
-           
-        </div>
- 
-    <div class="w-60 text-center bg-white py-12 shadow-black shadow-lg transition-all hover:scale-105 duration-300   ">
-        <img src="as (3).jpg" width="" alt="" class="rounded-full w-20 mx-20">
-        <h1 class="font-bold text-black">About Us</h1>
-        <p class="text-black">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, vero perspiciatis cumque asperiores quam </p>
-    </div>  
-    <div class="w-60 text-center py-11 bg-white   shadow-black shadow-lg transition-all hover:scale-105 duration-300   ">
-        <img src="as (1).png" width="" alt="" class="rounded-full w-20 mx-20">
-        <h1 class="font-bold text-black">Latest Blog Post</h1>
-        <p class="text-black">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, vero perspiciatis cumque asperiores quam </p>
-    </div>  
- </div>
-</section>
-<section class=" p-10 rounded-lg shadow-white shadow-md am">
-    <div class="my-10">
-        <h1 class="text-white text-center font-bold text-4xl ">Client Testimonials</h1>
-     </div>
-     <div class="flex flex-col md:flex-row justify-center items-center gap-6 ">
-        <div class="bg-white p-4 rounded-lg shadow-black shadow-md transition-all hover:scale-105 duration-300 ">
-            <img src="quotation_mark.png" width="20px" alt="" class=" ">
-            <p class="text-black">Excellent service!</p>
-            <h1 class="text-black font-bold">Jane D.</h1>
-        </div>
-        <div class="bg-white rounded-lg p-4 shadow-black shadow-md transition-all hover:scale-105 duration-300 ">
-            <img src="quotation_mark.png" width="20px" alt="" class=" ">
-            <p class="text-black">Professional and reliable team.</p>
-            <h1 class="text-black font-bold">John S.</h1>
-        </div>
-        <div class="bg-white rounded-lg p-4 shadow-black shadow-md transition-all hover:scale-105 duration-300 ">
-            <img src="quotation_mark.png" width="20px" alt="" class=" ">
-            <p class="text-black">Highly recommmend.</p>
-            <h1 class="text-black font-bold">Aramide R.</h1>
-        </div>
-     </div>
-      
-   
-</section>
-<footer class=" px-14 my-10 aw">
-    <div class="flex flex-row text-center md:flex-row justify-center items-center gap-6">
-        <div>
-           <h1>©2025 MAVEN. All rights reserved. </h1>  
-        </div>
-       <div>
-        <a href="#" class="mx-4">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-       </div>
-    </div>
-</footer>
-    </div>
 </body>
 </html>
-<script src="task1.js"></script>
+<script src="cal.js">
+
+</script>
